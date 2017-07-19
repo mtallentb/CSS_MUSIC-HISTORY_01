@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Music History</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body>
+
+		<div class="container">
+
+			<header>
+				<h1>Music History</h1>
+				<ul id="navigation">
+					<li><a href="#">View Music</a></li>
+					<li><a href="#">Add Music</a></li>
+					<li><a href="#">Profile</a></li>
+				</ul>
+
+			</header>
+
+			<div class="flexbox">
+
+				<aside>
+
+					<h3>Song Length</h3>
+					<input type="range" min="0" max="100"><br>
+
+					<h3>Artist:</h3>
+					<select name="artist">
+						<option value="Grateful Dead">Grateful Dead</option>
+						<option value="Phish">Phish</option>
+						<option value="Widespread Panic">Widespread Panic</option>
+						<option value="My Morning Jacket">My Morning Jacket</option>
+						<option value="Neil Young">Neil Young</option>
+					</select>
+
+					<h3>Album:</h3>
+					<select name="albums">
+						<option value="American Beauty">Workingman's Dead</option>
+						<option value="Lawn Boy">At the Roxy (Atlanta '93)</option>
+						<option value="Bombs and Butterflies">Live in the Classic City</option>
+						<option value="Evil Urges">It Still Moves</option>
+						<option value="Harvest Moon">Harvest Moon</option>
+					</select>
+
+					<h3>Genre:</h3>
+
+					<div class="flexbox">
+
+						<div class="checkboxes">
+
+							<input type="checkbox" name="genre"><span>Rock</span><br>
+							<input type="checkbox" name="genre"><span>Pop</span><br>
+							<input type="checkbox" name="genre"><span>Blues</span><br>
+
+						</div>
+
+						<div class="checkboxes">
+							
+							<input type="checkbox" name="genre"><span>Classical</span><br>
+							<input type="checkbox" name="genre"><span>Jazz</span><br>
+							<input type="checkbox" name="genre"><span>Hip Hop</span><br>
+
+						</div>
+
+					</div>
+
+				</aside>
+
+				<main>
+
+					<ul id="songs">
+						<li>
+							<h2>Reba</h2>
+							<ul class="song-info">
+								<li class="artist-name">Phish   |</li>
+								<li class="album-name">At the Rocy (Atlanta '93)   |</li>
+								<li class="what-genre">Rock</li>
+							</ul>
+							<hr>
+						</li>
+						<li>
+							<h2>Aunt Avis</h2>
+							<ul class="song-info">
+								<li class="artist-name">Widespread Panic   |</li>
+								<li class="album-name">Live in the Classic City   |</li>
+								<li class="what-genre">Rock</li>
+							</ul>
+							<hr>
+						</li>
+						<li>
+							<h2>Harvest Moon</h2>
+							<ul class="song-info">
+								<li class="artist-name">Neil Young   |</li>
+								<li class="album-name">Harvest Moon   |</li>
+								<li class="what-genre">Rock</li>
+							</ul>
+							<hr>
+						</li>
+						<li>
+							<h2>Run Thru</h2>
+							<ul class="song-info">
+								<li class="artist-name">My Morning Jacket   |</li>
+								<li class="album-name">It Still Moves   |</li>
+								<li class="what-genre">Rock</li>
+							</ul>
+						</li>
+					</ul>
+
+				</main>
+
+				</div>
+			
+		</div>
+		
+		<footer>
+
+		</footer>
+
+	</body>
+</html>
