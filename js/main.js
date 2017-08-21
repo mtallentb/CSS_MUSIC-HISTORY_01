@@ -14,6 +14,31 @@ for (i = 0; i < songs.length; i++) {
 	document.getElementById("songlist").innerHTML += `<li>${songs[i]}</li>`;
 }
 
+$('#addMusic').click(() => {
+	$('#addMusicView').removeClass('hide');
+	$('#listMusicView').addClass('hide');
+});
+
+$('#viewMusic').click(() => {
+	$('#addMusicView').addClass('hide');
+	$('#listMusicView').removeClass('hide');
+});
+
+$('#add-button').click(() => {
+	$('#targetList').append(`
+					<li>
+						<h2>${$('#song-title').val()}</h2>
+						<ul class="song-info">
+							<li class="artist-name">${$('#artist').val()}   |</li>
+							<li class="album-name">${$('#album').val()}   |</li>
+							<li class="what-genre">${$('#genre').val()}</li>
+						</ul>
+						<hr>
+					</li>`);
+	$('#addMusicView').addClass('hide');
+	$('#listMusicView').removeClass('hide');
+})
+
 
 /* 
 Add one song to the beginning and the end of the array.

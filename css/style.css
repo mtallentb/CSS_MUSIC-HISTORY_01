@@ -115,3 +115,11 @@ main {
 	font-size: 1.1em;
 }
 
+.hide {
+	display: none;
+}
+
+#targetList {
+	list-style: none;
+}
+
